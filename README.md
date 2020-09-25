@@ -1,4 +1,4 @@
-Testing this and this is a test too
+Testing this and this is a test too. Third test
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
