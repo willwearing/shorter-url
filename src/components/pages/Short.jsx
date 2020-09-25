@@ -18,7 +18,7 @@ const Short = () => {
   };
 
   const { hashid, url } = shortURL;
-  console.log(hashid, url);
+  // console.log(hashid, url);
 
   return (
     <div>
@@ -38,7 +38,7 @@ const Short = () => {
         {errors.url && errors.url.message}
         <button type="submit">Shorten It!</button>
       </form>
-      <LinkBox />
+      <LinkBox hashid={hashid} url={url} />
     </div>
   );
 };

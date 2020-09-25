@@ -1,13 +1,14 @@
 import React from "react";
 
-const LinkBox = () => {
+const LinkBox = ({ hashid, url }) => {
+  console.log("props", hashid, url);
   return (
     <div>
       <div>
-        <p>Old URL </p>
+        <p>{url}</p>
       </div>
       <div>
-        <a href="#">Shortened URL</a>
+        <a href={`https://rel.ink/${hashid}`}>{`https://rel.ink/${hashid}`}</a>
         <button>COPY</button>
       </div>
     </div>
