@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import axios from "axios";
+import LinkBox from "./LinkBox";
 
 const Short = () => {
   const { handleSubmit, register, errors } = useForm();
@@ -15,6 +16,9 @@ const Short = () => {
       .catch((err) => console.log(`Error: ${err}`))
       .finally();
   };
+
+  const { hashid, url } = shortURL;
+  console.log(hashid, url);
 
   return (
     <div>
@@ -34,6 +38,7 @@ const Short = () => {
         {errors.url && errors.url.message}
         <button type="submit">Shorten It!</button>
       </form>
+      <LinkBox />
     </div>
   );
 };
