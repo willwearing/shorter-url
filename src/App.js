@@ -5,17 +5,25 @@ import Hero from "./components/pages/Hero.jsx";
 import Short from "./components/pages/Short.jsx";
 import Body from "./components/pages/Body.jsx";
 import BodyBottom from "./components/pages/BodyBottom";
+import styled from "styled-components";
+
+const StyledDiv = styled.div`
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: seagreen;
+`;
 
 function App() {
   return (
-    <div className="App">
+    <StyledDiv>
       <Nav />
       <Hero />
       <Short />
       <Body />
       <BodyBottom />
       <Footer />
-    </div>
+    </StyledDiv>
   );
 }
 
